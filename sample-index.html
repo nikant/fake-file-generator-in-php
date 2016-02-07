@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fake file generator</title>
+<!-- nikant -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <style type="text/css">
+        body {
+            background: #000;
+            color: #fff;
+        }
+   </style>
+</head>
+<body>
+
+<h1>Fake File Generator</h1>
+
+<p>Your file will start downloading with a 5 seconds delay.</p>
+<p>Filename should be in English characters only.</p>
+<form method="post" action="dummyfilegen4.php">
+<p>
+   <input type="text" name="filename" placeholder="file name" value="" />.
+   <select name="fileext">
+    <option value="pdf" selected>pdf</option>
+    <option value="doc">doc</option>
+    <option value="docx">docx</option>
+    <option value="xls">xls</option>
+    <option value="xlsx">xlsx</option>
+    <option value="odt">odt</option>
+    <option value="ods">ods</option>
+    <option value="rtf">rtf</option>
+    <option value="zip">zip</option>
+    <option value="7z">7z</option>
+    <option value="rar">rar</option>
+    <option value="noheader">noheader</option>
+   </select><br><br>
+   <input type="number" name="filesize" placeholder="file size" value="12" min="12" max="10485760"/> Bytes. Warning! Max size is 10485760 Bytes ( 10 MB ). Min size is 12 Bytes<br><br>
+   <input type="radio" name="compressible" value="no" checked> uncompressible (random binary data) (default)<br>
+   <input type="radio" name="compressible" value="yes"> compressible  (random binary data as hex ASCII)<br><br>
+   <input type="submit" name="submit" value="Submit" />
+</p>
+</form>
+<br><br>
+<hr><br>
+
+       
+</body>
+</html>
+
